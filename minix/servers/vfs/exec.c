@@ -246,6 +246,8 @@ int pm_exec(vir_bytes path, size_t path_len, vir_bytes frame, size_t frame_len,
   strlcpy(finalexec, fullpath, PATH_MAX);
   strlcpy(firstexec, fullpath, PATH_MAX);
 
+  printf("Executando: %s\n", fullpath);
+
   /* Get_read_vp will return an opened vn in execi.
    * if necessary it releases the existing vp so we can
    * switch after we find out what's inside the file.
