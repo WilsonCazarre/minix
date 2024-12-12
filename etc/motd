@@ -7,3 +7,8 @@ https://wiki.minix3.org
 
 We'd like your feedback: https://minix3.org/community/
 
+printf("=================================================\n");
+printf("| OBRIGADO POR ESTAR AQUI - SO - UNIFESP 2s2024 |\n");
+printf("|           Projeto 1 - Equipe 5                |\n");
+printf("=================================================\n");
+
