@@ -10,6 +10,7 @@
  */
 #include "kernel/system.h"
 #include <string.h>
+#include <stdio.h>
 #include <minix/endpoint.h>
 
 #if USE_EXEC
@@ -23,6 +24,7 @@ int do_exec(struct proc * caller, message * m_ptr)
   register struct proc *rp;
   int proc_nr;
   char name[PROC_NAME_LEN];
+  
 
   if(!isokendpt(m_ptr->m_lsys_krn_sys_exec.endpt, &proc_nr))
 	return EINVAL;
